@@ -45,7 +45,7 @@
     CDVViewController* vc = (CDVViewController*)self.enginePlugin.viewController;
 
     [vc.commandQueue resetRequestId];
-    [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:CDVPluginResetNotification object:self.enginePlugin.webView]];
+    [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:CDVPluginResetNotification object:theWebView]];
 }
 
 /**
